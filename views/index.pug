@@ -4,3 +4,11 @@ block content
   h1= title
   p love myself.
   button(type="button", class="btn btn-dark") Press Me for contents
+  div(id="target") Display
+
+  script. 
+    let client_count= 0
+    function update() {
+      client_count = client_count + 1
+      document.getElementById('target').innerText = `Value now ${client_count}`
+    }
