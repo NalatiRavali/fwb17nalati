@@ -2,6 +2,6 @@ var express = require('express');
 var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('FunZone', { title: 'Fun Zone Search Results' });
+  res.render('funZone', { title: 'Fun Zone Search Results' });
 });
 module.exports = router; 
