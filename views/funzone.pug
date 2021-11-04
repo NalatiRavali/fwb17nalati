@@ -6,4 +6,11 @@ block content
   div(class="container-fluid mt-3")
   div(class="row")
     each funzone,index in funzones
-        div(class="col-sm-4") #{funzone.funzoneType} - #{funzone.funzonePrice} - #{funzone.funzoneLocation} 
+        div(class="col-sm-4"  onclick=`buy(${index})`) #{funzone.funzoneType} - #{funzone.funzonePrice} - #{funzone.funzoneLocation} 
+
+    script.
+
+      function buy(itemNo)
+      {
+        alert(`You purchased Item ${itemNo+1}`)
+      } 
